@@ -3,7 +3,7 @@ body, html {
     padding: 0;
 }
 
-/* Centering the login page vertically and horizontally */
+
 .page {
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@ body, html {
     height: 100vh;
 }
 
-/* Styling the login form */
+
 #loginForm {
     width: 300px;
     padding: 20px;
@@ -20,7 +20,7 @@ body, html {
     background-color: #f9f9f9;
 }
 
-/* Styling the form inputs */
+
 input[type="text"],
 input[type="password"] {
     width: 100%;
@@ -30,7 +30,7 @@ input[type="password"] {
     border-radius: 3px;
 }
 
-/* Styling the login button */
+
 button[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -41,7 +41,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-/* Styling the login button on hover */
+
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
