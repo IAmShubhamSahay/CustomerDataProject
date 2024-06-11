@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Customer Management Page -->
+    <div id="customerPage" class="page" style="display: none;">
+        <h2>Customer Management</h2>
+        <div id="searchSection">
+            <select id="searchBy">
+                <option value="firstName">First Name</option>
+                <option value="lastName">Last Name</option>
+                <option value="address">Address</option>
+                <option value="city">City</option>
+                <option value="state">State</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+            <input type="text" id="searchText" placeholder="Search...">
+            <button id="searchButton">Search</button>
+            <button id="syncButton">Sync Data</button>
+        </div>
+        <button id="addCustomerButton">Add Customer</button>
+        <table id="customerTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="customerList">
+                <!-- Customer data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Add/Edit Customer Form (modal) -->
+    <div id="customerFormModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add/Edit Customer</h2>
+            <form id="customerForm">
+                <input type="text" id="firstNameInput" placeholder="First Name">
+                <input type="text" id="lastNameInput" placeholder="Last Name">
+                <input type="text" id="addressInput" placeholder="Address">
+                <input type="text" id="cityInput" placeholder="City">
+                <input type="text" id="stateInput" placeholder="State">
+                <input type="email" id="emailInput" placeholder="Email">
+                <input type="tel" id="phoneInput" placeholder="Phone">
+                <button type="submit" id="saveCustomerButton">Save Customer</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
