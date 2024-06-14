@@ -5,6 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
+
+import java.util.UUID;
 
 @Entity
 @Table(name = "customers")
@@ -17,23 +20,13 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String firstn;
-
-    private String lastn;
-
+    private String uuid;
+    private String firstName;
+    private String lastName;
     private String street;
-
     private String address;
-
     private String city;
-
     private String state;
-
     private String email;
-
     private String phone;
-
-
-
-
 }

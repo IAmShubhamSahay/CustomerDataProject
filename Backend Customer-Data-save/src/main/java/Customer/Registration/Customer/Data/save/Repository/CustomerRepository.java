@@ -10,8 +10,8 @@ import java.util.List;
 public interface CustomerRepository extends JpaRepository<Customer,Long > {
 
 
-    List<Customer> findByfirstn(String first_name);
-    List<Customer> findBylastn(String last_name);
+    List<Customer> findByfirstName(String first_name);
+    List<Customer> findBylastName(String last_name);
     List<Customer> findBystreet(String street);
     List<Customer> findByaddress(String address);
     List<Customer> findBycity(String city);

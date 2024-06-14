@@ -2,7 +2,10 @@ package Customer.Registration.Customer.Data.save.Controller;
 
 import Customer.Registration.Customer.Data.save.Models.Customer;
 import Customer.Registration.Customer.Data.save.Service.CustomerService;
+import Customer.Registration.Customer.Data.save.Service.ExternalApiCall;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,6 +17,14 @@ public class CustomerController {
 
     @Autowired
     CustomerService customerService;
+
+//    private final CustomerService customerService;
+    private final ExternalApiCall externalApiCall;
+
+    public CustomerController(CustomerService customerService, ExternalApiCall externalApiCall) {
+        this.customerService = customerService;
+        this.externalApiCall = externalApiCall;
+    }
     @PostMapping("addcustomer")
     public void addCustomer(@RequestBody Customer customer){
         customerService.saveCustomer(customer);
@@ -74,8 +85,14 @@ public class CustomerController {
         customerService.deleteACustomerById(id);
     }
 
-    @GetMapping("fetch-remote-customers")
-    public void fetchAndSaveRemoteCustomers(){
-        customerService.fetchAndSaveRemoteCustomers();
+//    @GetMapping("fetch-remote-customers")
+//    public void fetchAndSaveRemoteCustomers(){
+//        customerService.fetchAndSaveRemoteCustomers();
+//    }
+
+    @GetMapping("/sync")
+    public ResponseEntity<Object[]> getTokenFromApi() {
+        Object[] customerObject = externalApiCall.getTokenFromApi();
+        return new ResponseEntity<>(customerObject, HttpStatus.ACCEPTED);
     }
 }
