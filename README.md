@@ -11,13 +11,13 @@ CSS
 
 **ID AND PASSWORD FOR LOGIN**
 
- **ID** :       Kamal                                                         
- **PASSWORD** : Kamal@123  
+ **ID** :       Shubham                                                         
+ **PASSWORD** : Sbm@1  
  
 **Getting Started**
 
 Clone the Repository Clone this repository to your local machine using the following HTTPS link: (only the backend part and for the frontend part open it in VS code and run on live server along with backend application)
-https://github.com/THE-KAYASTHA/SunbaseProject
+https://github.com/IAmShubhamSahay/CustomerDataProject
 
 Copy SunbaseFrontend file in VS code and run it live
 and open all the other files for backend
@@ -34,5 +34,4 @@ Click "Clone" and wait for IntelliJ to download and set up the project.
 and start the backend server.
 
 
-**Video for understanding working**
-https://github.com/THE-KAYASTHA/SunbaseProject/assets/139906594/8e2fb93a-4034-4fd3-b3a5-c30423f26704
+
