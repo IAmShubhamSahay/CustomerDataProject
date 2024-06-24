@@ -19,6 +19,7 @@ public class SecurityConfig {
     @Autowired
     private JWTAuthenticationFilter filter;
 
+    // This is security configuration
     @CrossOrigin(origins = "http://127.0.0.1:5500/index.html")
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
