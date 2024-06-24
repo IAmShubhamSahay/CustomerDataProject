@@ -11,7 +11,7 @@ CSS
 
 **ID AND PASSWORD FOR LOGIN**
 
- **ID** :       Shubham                                                         
+ **ID** :       shubham                                                         
  **PASSWORD** : Sbm@1  
  
 **Getting Started**
@@ -32,6 +32,3 @@ Select "New" and then click on "Project from Version Control."
 Choose "Git" and paste the cloned repository URL.
 Click "Clone" and wait for IntelliJ to download and set up the project.
 and start the backend server.
-
-
-
