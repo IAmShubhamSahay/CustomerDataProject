@@ -1,18 +1,38 @@
-Backend API for Customer Management System
-This project is a backend API for a Customer Management System, developed using Spring Boot and MySQL database. It provides full functionality for managing customers, including authentication, CRUD operations, data synchronization, and search functionality.
+# SunbaseProject
+It is a assignment project for Java developer Intern role which is based on SpringBoot and Rest-Api .
+ 
+Tech Stack Used
+Spring Boot
+Java
+JWT Authentication
+SQL (Database: sunbase)
+HTML
+CSS
 
-Features
-Authentication: Users can log in using a username and password. JWT is used for authorization.
-CRUD Operations: Users can view, add, edit, and delete customer records.
-Data Synchronization: Users can sync customer data by clicking the sync button.
-Search Functionality: Customers can be searched by various parameters including first name, last name, phone number, email address, city, address, and street.
-Swagger API: Swagger API documentation is included for easy API reference.
-Technologies Used
-Spring Boot: Backend framework for building Java applications.
-MySQL Database: Database management system for storing customer data.
-JWT (JSON Web Tokens): Used for authentication and authorization.
-Swagger API: Dependency included for API documentation.
-HTML, CSS, JS: Used for creating frontend pages (frontend work in progress).
+**ID AND PASSWORD FOR LOGIN**
 
-Frontend (Work in Progress)
-Frontend pages have been created using HTML, CSS, and JavaScript. However, frontend integration with the backend is pending. Frontend work is ongoing and will be merged with the backend soon.
+ **ID** :       Kamal                                                         
+ **PASSWORD** : Kamal@123  
+ 
+**Getting Started**
+
+Clone the Repository Clone this repository to your local machine using the following HTTPS link: (only the backend part and for the frontend part open it in VS code and run on live server along with backend application)
+https://github.com/THE-KAYASTHA/SunbaseProject
+
+Copy SunbaseFrontend file in VS code and run it live
+and open all the other files for backend
+
+
+**Open in IntelliJ**
+
+Open IntelliJ IDEA and follow these steps to clone the project:
+
+Click on "File" in the top-left corner.
+Select "New" and then click on "Project from Version Control."
+Choose "Git" and paste the cloned repository URL.
+Click "Clone" and wait for IntelliJ to download and set up the project.
+and start the backend server.
+
+
+**Video for understanding working**
+https://github.com/THE-KAYASTHA/SunbaseProject/assets/139906594/8e2fb93a-4034-4fd3-b3a5-c30423f26704
