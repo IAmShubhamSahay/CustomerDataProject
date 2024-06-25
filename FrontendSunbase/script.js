@@ -174,8 +174,9 @@ function addCustomersToTable(customers) {
         <td>${element.phone}</td>
         <td>
             <div class="actions">
-                <button onclick="deleteCust(this)" data-email= ${element.email} class="del-btn">Delete></i></button>
+                <button onclick="deleteCust(this)" data-email= ${element.email} class="del-btn">Delete</i> </button>
                 <button onclick="editRow(this)" data-email= ${element.email} class="edit-btn">Edit</i></button>
+
             </div>
         </td>`;
 

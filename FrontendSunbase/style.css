@@ -5,31 +5,42 @@
     justify-content: center;
   }
   #login-form {
-    margin-top: 200px;
+    margin-top: 180px;
     display: flex;
     flex-direction: column;
     /* max-width: 600px; */
     align-items: center;
     justify-content: center;
-    row-gap: 20px;
+    row-gap: 18px;
+  }
+  #user1{
+    color: brown;
+
+  }
+  #pass1{
+    color: brown;
   }
   #login-form > input {
-    width: 300px;
-    height: 30px;
+    width: 280px;
+    height: 28px;
   }
   h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
   }
   button {
     padding: 0.8rem 3rem;
   }
   .pno{
-    margin-top: 10px;
+    margin-top: 12px;
      display: flex;
      justify-content: center;
      align-items: center;
-     font-size: 20px; 
+     font-size: 18px; 
+  }
+  .del-btn {
+    background-color: red;
+    color: white;
   }
   #customer-List {
     display: none;
@@ -46,40 +57,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 10px;
-    font-size: 20px;
+    column-gap: 12px;
+    font-size: 18px;
   }
   #btn > input,
   select {
-    height: 40px;
+    height: 38px;
   }
   #searchBar {
-    height: 40px;
+    height: 38px;
   }
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 18px;
   }
   
   .table {
     width: 95%;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
     margin-inline: auto;
   }
   
   td {
     border: 1px solid black;
-    padding: 5px;
+    padding: 6px;
     text-align: center;
   }
   
   th {
     text-align: start;
     border: 1px solid black;
-    padding: 8px;
+    padding: 9px;
     text-align: center;
   }
   #addCustomer-form {
@@ -94,21 +105,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 22px;
   }
   #addCustomer-form > div {
     display: flex;
-    row-gap: 20px;
-    column-gap: 40px;
-    font-size: 20px;
-    margin-right: 20px;
+    row-gap: 22px;
+    column-gap: 38px;
+    font-size: 18px;
+    margin-right: 18px;
   }
   
   #addCustomer-form > div > div > input {
-    padding: 10px 10px;
-    margin-left: 20px;
+    padding: 12px 12px;
+    margin-left: 18px;
     display: flex;
-    row-gap: 20px;
+    row-gap: 18px;
   }
   
   /*  */
@@ -118,19 +129,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 18px;
   }
   #editCustomer-form > div {
     display: flex;
-    row-gap: 20px;
-    column-gap: 40px;
-    font-size: 20px;
-    margin-right: 20px;
+    row-gap: 18px;
+    column-gap: 28px;
+    font-size: 22px;
+    margin-right: 22px;
   }
   
   #editCustomer-form > div > div > input {
-    padding: 10px 10px;
-    margin-left: 20px;
+    padding: 12px 12px;
+    margin-left: 18px;
     display: flex;
-    row-gap: 20px;
+    row-gap: 18px;
   }

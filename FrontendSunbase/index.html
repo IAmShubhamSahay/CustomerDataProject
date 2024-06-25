@@ -9,17 +9,20 @@
   <body>
     <section id="login">
       <form id="login-form">
-        <h1>Login</h1>
+        <h1> Please Login By UserName and Password</h1>
+        
+        <label id="user1"><h2>UserName</h2></label>
         <input
           type="text"
           id="username"
-          placeholder="Enter username"
+          placeholder="Enter UserName"
           required
         />
+        <label id="pass1"><h2>Password</h2></label>
         <input
           type="password"
           id="password"
-          placeholder="Enter password"
+          placeholder="Enter Password"
           required
         />
         <button type="submit">Submit</button>
@@ -27,21 +30,21 @@
     </section>
 
     <section id="customer-List">
-      <h1>Customer List</h1>
+      <h1>THIS IS CUSTOMER DATA</h1>
       <div id="btn">
-        <button onclick="addCustomer()">Add customer</button>
-        <label for="sortBy">Sort By</label>
+        <button onclick="addCustomer()">Add Customer</button><br>
+        <label for="sortBy">Sort By</label><br>
         <select id="selectField">
-          <option value="firstName">firstName</option>
+          <option value="firstName">FirstName</option>
           <option value="City">City</option>
           <option value="Email">Email</option>
           <option value="Phone">Phone</option>
 
         </select>
         
-        <label for="searchField">Search By</label>
+        <label for="searchField">Do Search By</label>
         <select name="" id="searchField">
-          <option value="firstName">firstName</option>
+          <option value="firstName">FirstName</option>
           <option value="city">City</option>
           <option value="email">Email</option>
           <option value="phone">Phone</option>
@@ -51,22 +54,22 @@
           <button class="btn" onclick="search()">Search</button>
         </div>
         <button onclick="sync()" id="sync-btn" class="btn">Sync</button>
-      </div>
+      </div><br>
 
 
-      <div class="pno" >  Page no :    
+      <div class="pno" > Select Page no :    
         <button id="p1">1</button>
         <button id="p2">2</button>
         <button id="p3">3</button>
         <button id="p4">4</button>
-      </div>
+      </div><br>
 
       <div id="table">
         <table id="customer-table"></table>
       </div>
 
       <form id="addCustomer-form" class="addCustomer-form">
-        <h1 id="form-heading">Add Customer</h1>
+        <h1 id="form-heading">Add New Customer </h1>
         <div>
           <div>
             <label for="firstName">First Name:</label>
@@ -79,17 +82,17 @@
         </div>
         <div>
           <div>
-            <label for="street">street:</label>
+            <label for="street">Street:</label>
             <input id="street" type="text" placeholder="street" />
           </div>
           <div>
-            <label for="address">address</label>
+            <label for="address">Address</label>
             <input id="address" type="text" placeholder="address" />
           </div>
         </div>
         <div>
           <div>
-            <label for="city">city:</label>
+            <label for="city">City:</label>
             <input id="city" type="text" placeholder="city" />
           </div>
           <div>
@@ -99,16 +102,17 @@
         </div>
         <div>
           <div>
-            <label for="email">email</label>
+            <label for="email">Email</label>
             <input id="email" type="email" placeholder="email" />
           </div>
           <div>
-            <label for="phone">phone</label>
+            <label for="phone">Phone</label>
             <input id="phone" type="number" placeholder="phone" />
           </div>
         </div>
         <button type="submit">Submit</button>
       </form>
+      <br>
 
       <form id="editCustomer-form" class="addCustomer-form editCustomer-form">
         <h1 id="form-heading">Edit Customer</h1>
@@ -124,13 +128,13 @@
         </div>
         <div>
           <div>
-            <label for="editaddress">address</label>
+            <label for="editaddress">Address</label>
             <input id="editaddress" type="text" placeholder="address" />
           </div>
         </div>
         <div>
           <div>
-            <label for="editcity">city:</label>
+            <label for="editcity">City:</label>
             <input id="editcity" type="text" placeholder="city" />
           </div>
           <div>
